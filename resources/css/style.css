@@ -3,3 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+img {
+    width: 200px;
+}
+
+nav {
+    position: fixed;
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+.logo {
+    float: left;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses {
+    display: inline-flex;
+}
+
+.practicing_events {
+    display: inline-flex;
+}
