@@ -2,49 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
     width: 200px;
 }
 
-
-.logo {
-    float: left;
-}
-
-.events {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-flow: column;
-}
-
-.courses {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.practicing_events {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
 nav {
     background: #333;
+    height: 64px;
+    margin-left: auto;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
 }
 
 nav li {
-    flex: 1 1 0;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -58,3 +36,44 @@ nav a:hover {
     background-color: #555;
 }
 
+.learn {
+    margin-top: 0;
+}
+
+.learn img {
+    width: 60%;
+    height: auto;
+    margin: 32px 24px;
+    vertical-align: middle;
+}
+
+.learn span {
+    display: inline-block; 
+    width: 30%;
+    height: auto;
+    overflow: hidden; 
+}
+
+.learn span h1 {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: gray;
+}
+
+.learn span p {
+    color: gray; 
+    font-size: 24px; 
+    margin-top: 12px;
+}
+.learn span a {
+    color: white; 
+    font-size: 24px;
+    display: block; 
+    background: gray;
+    padding: 8px;
+    margin-top: 12px;
+    width: 90%; 
+    border-radius: 5px; 
+    height: auto; 
+    overflow: hidden; 
+}
