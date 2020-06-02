@@ -5,28 +5,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-    width: 200px;
-}
+/* Navbar */
 
 nav {
     background: #333;
     height: 64px;
     margin-left: auto;
+    display: flex; 
+    justify-content: space-between; 
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-}
-
-nav li {
-    justify-content: flex-end;
+    justify-content: flex-end; 
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
+    text-align: center;
     color: #fff;
     display: block;
     padding: 10px;
@@ -35,6 +34,8 @@ nav a {
 nav a:hover {
     background-color: #555;
 }
+
+/** "Learn Something New..." Banner Section **/
 
 .learn {
     margin-top: 0;
@@ -76,4 +77,33 @@ nav a:hover {
     border-radius: 5px; 
     height: auto; 
     overflow: hidden; 
+}
+
+/*  Practicing */ 
+
+.practicing img {
+    width: 60%; 
+    margin: 32px 24px; 
+    height: auto; 
+    overflow: hidden; 
+}
+
+.practicing h2 {
+    font-size: 48px; 
+    font-weight: bold; 
+    color: #333;
+    padding: 32px;
+}
+
+.practicing p {
+    color: #555;
+    font-weight: lighter;
+    padding: 24px;
+    font-size: 24px;
+}
+
+.practicing aside {
+    color: #333; 
+    padding: 32px;
+    font-size: 24px; 
 }
