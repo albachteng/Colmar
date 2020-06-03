@@ -157,3 +157,46 @@ nav a:hover {
 .event_text a {
     margin: 6px;
 }
+
+/* Start Learning Section */
+
+.courses {
+    background: #999;
+    padding-bottom: 32px;
+}
+
+.courses h2 {
+    text-align: center; 
+    color: #333;
+    padding: 32px;
+    font-size: 48px;
+}
+
+.course_boxes {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    margin: 0 72px 32px 72px;
+}
+
+.course {
+    display: flex; 
+    background: #fff;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 16px 14px 0;
+    padding-bottom: 24px;
+}
+
+.course img {
+    height: auto;
+    width: 100%;
+}
+
+.course h3 {
+    margin: 16px;
+}
+
+.course p {
+    margin: 8px 16px;
+}
