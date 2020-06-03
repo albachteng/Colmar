@@ -39,6 +39,7 @@ nav a:hover {
 
 .learn {
     margin-top: 0;
+    background: #999;
 }
 
 .learn img {
@@ -58,11 +59,11 @@ nav a:hover {
 .learn span h1 {
     font-size: 48px; 
     font-weight: bold; 
-    color: gray;
+    color:#333;
 }
 
 .learn span p {
-    color: gray; 
+    color: #333; 
     font-size: 24px; 
     margin-top: 12px;
 }
@@ -70,13 +71,18 @@ nav a:hover {
     color: white; 
     font-size: 24px;
     display: block; 
-    background: gray;
+    background: #333;
     padding: 8px;
     margin-top: 12px;
     width: 90%; 
     border-radius: 5px; 
     height: auto; 
     overflow: hidden; 
+    text-align: center;
+}
+
+.learn span a:hover {
+    background: #555;
 }
 
 /*  Practicing */ 
@@ -85,47 +91,69 @@ nav a:hover {
     display: flex;
 }
 
-.practicing img {
-    width: 60%; 
-    margin: 32px 24px; 
-    height: auto; 
+.practicing {
+    width: 60%;
+    margin: 32px 24px;
+    height: auto;
     overflow: hidden; 
+}
+
+.practicing img {
+    width: 100%;
+    height: auto; 
 }
 
 .practicing h2 {
     font-size: 48px; 
     font-weight: bold; 
     color: #333;
-    padding: 32px;
+    padding-top: 32px;
 }
 
 .practicing p {
-    color: #555;
+    color: #333;
     font-weight: lighter;
-    padding: 24px;
-    font-size: 24px;
+    padding-top: 24px;
+    font-size: 18px;
 }
 
 .practicing aside {
     color: #333; 
-    padding: 32px;
-    font-size: 24px; 
+    padding: 32px 0;
+    font-size: 18px; 
 }
 
 .events {
     display: flex;
     flex-direction: column;
     width: 40%;
+    margin-top: 32px;
 }
 
-.events > span {
-    width: 100%;
-    height: 50px;
+.event_box {
+    display: flex;
 }
 
-.events > span > img {
-    height: auto;
+.event_box img {
     width: 35%;
+    height: auto; 
+    margin: 16px;
 }
 
-.events > span > 
+.event_box:hover {
+    background: #999;
+}
+
+.event_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6px;
+    color: #333;
+}
+
+.event_text h3,
+.event_text p, 
+.event_text a {
+    margin: 6px;
+}
