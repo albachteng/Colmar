@@ -38,8 +38,9 @@ nav a:hover {
 /** "Learn Something New..." Banner Section **/
 
 .learn {
-    margin-top: 0;
     background: #999;
+    display: flex;
+    align-items: center;
 }
 
 .learn img {
@@ -49,25 +50,25 @@ nav a:hover {
     vertical-align: middle;
 }
 
-.learn span {
-    display: inline-block; 
+.learn div {
+    display: flex; 
     width: 30%;
-    height: auto;
-    overflow: hidden; 
+    flex-direction: column;
 }
 
-.learn span h1 {
+.learn div h1 {
     font-size: 48px; 
     font-weight: bold; 
     color:#333;
 }
 
-.learn span p {
+.learn div p {
     color: #333; 
     font-size: 24px; 
     margin-top: 12px;
 }
-.learn span a {
+
+.learn div a {
     color: white; 
     font-size: 24px;
     display: block; 
@@ -81,7 +82,7 @@ nav a:hover {
     text-align: center;
 }
 
-.learn span a:hover {
+.learn div a:hover {
     background: #555;
 }
 
@@ -203,12 +204,12 @@ nav a:hover {
 
 /* Thesis section */ 
 
-.thesis {
+.thesis_section {
     padding-bottom: 32px;
     width: 100%;
 }
 
-.thesis h2 {
+.thesis_section h2 {
     padding: 32px 0;
     text-align: center;
     font-size: 42px;
@@ -218,16 +219,23 @@ nav a:hover {
 
 .theses {
     display: flex;
+    width: 100%;
+    height: auto;
 }
 
-.theses video {
+.video {
     width: 60%;
+    height: auto;
+}
+
+video {
+    width: 100%;
     padding: 24px;
 }
 
 .video h3,
 .video p {
-    width: 60%;
+    width: 100%;
     height: auto;
     padding-left: 24px;
 }
@@ -235,8 +243,32 @@ nav a:hover {
 .video h3 {
     margin-top: 24px;
     margin-bottom: 8px;
+    color: #333;
 }
 
 .other_theses {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.thesis img {
+    width: 35%;
+    height: auto;
+    display: flex;
+    padding: 16px;
+}
+.thesis_text {
+    width: 65%;
+    color: #333;
+}
+
+.thesis:hover {
+    background: #999;
 }
